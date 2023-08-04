@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Converting Hours to Seconds</title>
+</head>
+<body>
+    <script>
+        let FDistance = prompt("What's your distance in cm?");
+        let SDistance = prompt("What's your distance in feet?");
+        const feetToMeters = SDistance * 0.305;
+
+        FDistance = parseFloat(FDistance); 
+        SDistance = parseFloat(SDistance);
+
+        if (FDistance < feetToMeters) {
+        alert("The distance in centimeters is smaller.");
+        } else if (FDistance > feetToMeters) {
+        alert("The distance in feet is smaller.");
+        } else {
+        alert("The distances are equal.");
+        }
+
+
+    </script>
+</body>
+</html>
