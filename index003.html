@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>square</title>
+</head>
+
+<body>
+    <script>
+        const numToCheck = +prompt("What's your number?")
+        let num = true;
+
+        if (numToCheck <= 1) {
+            num = false;
+        } else if (numToCheck > 2) {
+            if (numToCheck % 2 === 0) {
+                num = false;
+            } else {
+                for (let i = 3; i * i <= numToCheck; i += 2) {
+                    if (numToCheck % i === 0) {
+                        num = false;
+                        break;
+                    }
+                }
+            }
+        }
+        if (num) {
+            console.log(`${numToCheck} - простое число`);
+        } else {
+            console.log(`${numToCheck} - не простое число`);
+        }
+
+
+    </script>
+</body>
+
+</html>

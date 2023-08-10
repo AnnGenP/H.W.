@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>square</title>
+</head>
+
+<body>
+    <script>
+        const numToCheck = +prompt("What's your number?")
+        let tempNum = numToCheck;
+
+        while (tempNum > 1) {
+            if (tempNum % 3 !== 0) {
+                console.log(`${numToCheck} нельзя получить путем возведения 3 в некоторую степень`);
+                break;
+            }
+            tempNum /= 3;
+        }
+
+        if (tempNum === 1) {
+            console.log(`${numToCheck} можно получить путем возведения 3 в некоторую степень`);
+        }
+
+    </script>
+</body>
+
+</html>
